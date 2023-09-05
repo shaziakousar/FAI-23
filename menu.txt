@@ -1,0 +1,5 @@
+﻿--------------------------------Patient Management System----------------------------------------------------
+Press 1-Adding a patient
+Press 2-Deleting a patient
+Press 3-Updating a patient
+Press 4-Finding a employee
