@@ -1,0 +1,31 @@
+body{
+    background-color: #80d8f0;
+    color:indigo;
+}
+
+ 
+
+h1,h2,h3,h4,nav{
+
+    text-align: center;
+}
+
+ 
+
+div{
+
+    display: inline-block;
+    width: 39%;
+    height: 300px;
+    border: 2px dashed lightcyan;
+    vertical-align: top;
+    padding: 10px;
+    text-align: justify;
+    margin:10px;
+    
+    box-shadow: 10px;
+    background-color:aliceblue;
+   
+    
+   
+}

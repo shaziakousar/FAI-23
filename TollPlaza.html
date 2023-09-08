@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/toll.css">
+    <script src="../js/toll.js"></script>
+    <script src="../lib/jquery.min.js"></script>
+    <script>
+        
+
+function onAddFeature() {
+const mgrObj = new AmtManager();
+    const no = Number($("#txtNumber").val());
+
+  
+
+    const type = $("#TypeVeh").val();
+    const amt = Number($("#amt").val());
+
+    const add = new vehicles(no,type,amt);
+
+    mgrObj.addNewExpense(add);
+
+    alert("Toll Details Added successfully");
+
+}
+const eventMapping = () => {
+    $("button").click(onAddFeature);
+
+}
+$().ready(() => {
+eventMapping();
+})
+    </script>
+</head>
+<body>
+    <h2 style="background-color:aliceblue; color:indigo "> NAVAYUGA INFRASTRUCTURES</h2>
+    <h4 style="background-color:aliceblue; color:indigo">TOLL PLAZA</h4>
+    
+    <div>
+        <centre>Vehicle Details</centre><br><br><br>
+        REGISTRATION VEHICLE NUMBER: <input id="txtNumber" type="text" maxlength="10"><br/><br>
+        TYPE OF VEHICLE: 
+        <select id="TypeVeh">
+            <option >Select the type </option>
+            <option value="option1">Bikes</option>
+            <option value="option2">LMV</option>
+            <option value="option3">HMV</option>
+            <option value="option4">Heavy Trucks</option>   
+        </select><br><br>
+        <!-- <span id="amt">TOLL AMOUNT:</span> -->
+        TOLL AMOUNT: <input id="amt" type="number"><br><br>
+        <button id="btnSave">SAVE</button>
+    </div>
+    
+        Category: <select id="TypeVeh">
+            <option >Select the type </option>
+            <option value="option1">Bikes</option>
+            <option value="option2">LMV</option>
+            <option value="option3">HMV</option>
+            <option value="option4">Heavy Trucks</option>   
+        </select> &nbsp;
+        REGISTRATION NUMBER <input type="text" id="search">
+        <button id="submit">SUBMIT</button>
+
+     
+</body>
+</html>
